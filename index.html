@@ -13,7 +13,7 @@ html {
 body {
   align-items: center;
   /* Credit: https://unsplash.com/photos/quuG8oNM61A */
-  background: url("palmsprings.jpg") center center;
+  background: url("palmsprings.jpg") center center fixed no-repeat;
   background-size: cover;
   display: flex;
   font: larger monospace;
@@ -27,8 +27,13 @@ main {
   -webkit-backdrop-filter: hue-rotate(140deg) blur(3px);
   background-color: #fffc;
   padding: 30px;
-  margin: 10px;
-  max-width: 700px;
+  margin: 0 10px;
+  max-width: 600px;
+}
+@media (max-aspect-ratio: 1/1) {
+  main {
+    margin: 10px;
+  }
 }
 @media (prefers-color-scheme: dark) {
   main {
