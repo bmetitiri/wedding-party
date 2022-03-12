@@ -12,16 +12,36 @@ html {
 }
 body {
   align-items: center;
+  /* Credit: https://unsplash.com/photos/quuG8oNM61A */
+  background: url("palmsprings.jpg") center center;
+  background-size: cover;
   display: flex;
+  font: larger monospace;
   justify-content: center;
   margin: 0;
   min-height: 100vh;
   min-height: -webkit-fill-available;
 }
 main {
-  border: 2px inset pink;
-  box-shadow: 0 0 200px pink;
-  padding: 20px;
+  backdrop-filter: hue-rotate(140deg) blur(3px);
+  -webkit-backdrop-filter: hue-rotate(140deg) blur(3px);
+  background-color: #fffc;
+  padding: 30px;
+  margin: 10px;
+  max-width: 700px;
+}
+@media (prefers-color-scheme: dark) {
+  main {
+    background-color: #000c;
+  }
+}
+a {
+  color: mediumslateblue;
+  text-decoration: none;
+}
+p {
+  margin: auto;
+  max-width: 400px;
 }
 span {
   white-space: nowrap;
@@ -32,20 +52,31 @@ span {
     <main>
       <h1>
         <span>Bea &hearts; Jon</span>
-        <span>Wedding Party</span></h1>
+        <span>Wedding Party</span>
+      </h1>
       <h2>
-        <span>May 14th, 2022</span>
-        <span>(2022-05-14)<span>
+        <span title="2022-05-14">May 14th, 2022</span><br/>
+        <span title="16:00">4pm<span>
       </h2>
+      <h3>
+        <span>611 W Linda Vista Dr</span><br/>
+        <span>Palm Springs, CA 92262</span>
+      </h3>
+      <hr>
+      <em>We request your presence, not your presents, so there is no gift registry for this event</em>
       <hr>
       <h2>Hotels</h2>
-      <small>Discounts are available for the nights of the 13th and 14th.</small>
-      <h3>Quality Inn Downtown</h3>
+      Discounts are available for the nights of the 13th and 14th
+      <h3><a href="https://www.tripadvisor.com/Hotel_Review-g32847-d142262-Reviews-Quality_Inn_Palm_Springs_Downtown-Palm_Springs_Greater_Palm_Springs_California.html" >Quality Inn Downtown</a></h3>
       <p>390 S. Indian Canyon Drive</p>
-      Call and book with the Metitiri Wedding Party.
-      <h3>V Palm Springs</h3>
+      Call and book with the Metitiri Wedding Party
+      <h3><a href="https://www.sonder.com/destinations/palm_springs/Sonder-at-V-Palm-Springs-ADA-Private-Room/c31515?sleeps=1">V Palm Springs</a></h3>
       <p>333 East Palm Canyon Drive</p>
       Promo Code: VWedding10
+      <h2>Dress Code</h2>
+      <p>
+        We request that all guests wear black and/or white or muted colors. Otherwise, wear whatever you want. It's Palm Springs so it will be warm, but it cools off after the sun sets.
+      </p>
     </main>
   </body>
 </html>
